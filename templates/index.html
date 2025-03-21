@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+</head>
+<body>
+    <div class="container">
+        <h1>House Price Prediction</h1>
+        <form action="/predict" method="POST">
+            <label for="OverallQual">Overall Quality:</label>
+            <input type="number" name="OverallQual" step="1" min="1" max="10" required>
+            
+            <label for="GrLivArea">Above Ground Living Area (sq ft):</label>
+            <input type="number" name="GrLivArea" step="0.01" required>
+            
+            <label for="TotalBsmtSF">Total Basement Area (sq ft):</label>
+            <input type="number" name="TotalBsmtSF" step="0.01" required>
+            
+            <label for="BsmtFinSF1">Finished Basement Area (sq ft):</label>
+            <input type="number" name="BsmtFinSF1" step="0.01" required>
+            
+            <label for="KitchenQual">Kitchen Quality (1 to 10):</label>
+            <input type="number" name="KitchenQual" step="1" min="1" max="10" required>
+            
+            <label for="GarageArea">Garage Area (sq ft):</label>
+            <input type="number" name="GarageArea" step="0.01" required>
+            
+            <label for="BsmtQual">Basement Quality (1 to 10):</label>
+            <input type="number" name="BsmtQual" step="1" min="1" max="10" required>
+            
+            <label for="2ndFlrSF">Second Floor Area (sq ft):</label>
+            <input type="number" name="2ndFlrSF" step="0.01" required>
+            
+            <label for="FireplaceQu_NA">Fireplace Quality (NA if no fireplace):</label>
+            <input type="string" name="FireplaceQu_NA" step="1" min="0" max="1" required>
+            
+            <label for="1stFlrSF">First Floor Area (sq ft):</label>
+            <input type="number" name="1stFlrSF" step="0.01" required>
+            
+            <button type="submit">Predict Price</button>
+        </form>
+    </div>
+</body>
+</html>
